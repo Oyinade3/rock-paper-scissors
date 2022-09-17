@@ -9,6 +9,11 @@ the game should be played in 5 rounds and the one with the most wins is the over
 // function game(player, computer){
         
 // }
+
+
+let playerWins = 0;
+let computerWins = 0;
+
 function compareChoices(player, computer, choiceArray){
     if (player === computer) {
       alert("It's a draw");
@@ -39,9 +44,7 @@ function compareChoices(player, computer, choiceArray){
     }
 }
 function startGame(){
-    let playerWins = 0;
-    let computerWins = 0;
-    let roundCount = prompt('How many rounds do you want to play?')
+    let roundCount = parseInt(prompt('How many rounds do you want to play?\n(in numbers)'))
     for (let i = 0; i<roundCount; i++){
         let choices = ["rock", "paper", "scissors"];
         let playerSelection = prompt("Rock, Paper or Scissors?");
@@ -61,6 +64,5 @@ function startGame(){
 }
 
     console.log(playerWins, computerWins);
-    // game(playerChoice, computerChoice);
 
 startGame()
