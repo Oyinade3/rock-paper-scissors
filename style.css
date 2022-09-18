@@ -1,3 +1,7 @@
 body{
     background: black;
+    color: white;
+}
+.reload{
+    display: none;
 }
